@@ -12,7 +12,7 @@ local Window = Rayfield:CreateWindow({
    Discord = {
       Enabled = true,
       Invite = "83Zp9jfNgW", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
-      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+      RememberJoins = false -- Set this to false to make them join the discord every time they load it up
    },
    KeySystem = true, -- Set this to true to use our key system
    KeySettings = {
@@ -52,7 +52,10 @@ local Button = MainTab:CreateButton({
    end,
 })
 
-local Button = MainTab:CreateButton({
+local Button = Tab:CreateButton({
+   Name = "Button Example",
+   Callback = function()
+	local Button = MainTab:CreateButton({
    Name = "Infinite Jump",
    Callback = function()
   local InfiniteJumpEnabled = true
@@ -61,18 +64,9 @@ game:GetService("UserInputService").JumpRequest:connect(function()
 		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
 	end
 end)
-local InfiniteJump = CreateButton("Infinite Jump: Off", StuffFrame)
-InfiniteJump.Position = UDim2.new(0,10,0,130)
-InfiniteJump.Size = UDim2.new(0,150,0,30)
-InfiniteJump.MouseButton1Click:connect(function()
-	local state = InfiniteJump.Text:sub(string.len("Infinite Jump: ") + 1) --too lazy to count lol
-	local new = state == "Off" and "On" or state == "On" and "Off"
-	InfiniteJumpEnabled = new == "On"
-	InfiniteJump.Text = "Infinite Jump: " .. new
-end)
+
    end,
 })
-
 
 local Slider = MainTab:CreateSlider({
    Name = "Walkspeed Slider ",
