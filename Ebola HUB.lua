@@ -48,7 +48,7 @@ Rayfield:Notify({
 local Button = MainTab:CreateButton({
    Name = "Rejoin The current Server",
    Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/EbolaMaj/Ebola/main/rejoinServer.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/LZjH70ZwH1mKlcHWLpyAf/LZEBOLA70Z/main/rejoinServer.lua"))()
    end,
 })
 
@@ -89,14 +89,14 @@ local Slider = MainTab:CreateSlider({
 local Button = MainTab:CreateButton({
    Name = "Esp(B TO TOGGLE)",
    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/EbolaMaj/Ebola/main/updatedESP.lua",true))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LZjH70ZwH1mKlcHWLpyAf/LZEBOLA70Z/main/updatedESP.lua"))()
    end,
 })
 
 local Button = MainTab:CreateButton({
    Name = "Fly(F TO TOGGLE)",
    Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/EbolaMaj/Ebola/main/fly.lua",true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/LZjH70ZwH1mKlcHWLpyAf/LZEBOLA70Z/main/fly.lua"))()
    end,
 })
 
@@ -118,7 +118,7 @@ Rayfield:Notify({
 local Button = MainTab:CreateButton({
    Name = "Auto TP(M TOGGLE)",
    Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/EbolaMaj/Ebola/main/auto%20TP.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/LZjH70ZwH1mKlcHWLpyAf/LZEBOLA70Z/main/auto%20TP.lua"))()
    end,
 })
 
@@ -140,6 +140,6 @@ Rayfield:Notify({
 local Button = MainTab:CreateButton({
    Name = "Wall Jumper(J TO TOGGLE)",
    Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/EbolaMaj/Ebola/main/wallJumper.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/LZjH70ZwH1mKlcHWLpyAf/LZEBOLA70Z/main/wallJumper.lua"))()
    end,
 })
