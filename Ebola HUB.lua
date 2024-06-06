@@ -52,22 +52,6 @@ local Button = MainTab:CreateButton({
    end,
 })
 
-local Button = Tab:CreateButton({
-   Name = "Button Example",
-   Callback = function()
-	local Button = MainTab:CreateButton({
-   Name = "Infinite Jump",
-   Callback = function()
-  local InfiniteJumpEnabled = true
-game:GetService("UserInputService").JumpRequest:connect(function()
-	if InfiniteJumpEnabled then
-		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
-	end
-end)
-
-   end,
-})
-
 local Slider = MainTab:CreateSlider({
    Name = "Walkspeed Slider ",
    Range = {0, 999},
