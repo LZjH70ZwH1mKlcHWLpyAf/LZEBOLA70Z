@@ -148,3 +148,10 @@ if _G.infinJumpStarted == nil then
 end
    end,
 })
+
+local Button = MainTab:CreateButton({
+   Name = "Infinite Yeild",
+   Callback = function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   end,
+})
