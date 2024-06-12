@@ -6,7 +6,7 @@ local Window = Rayfield:CreateWindow({
    LoadingSubtitle = "by Ebola ",
    ConfigurationSaving = {
       Enabled = true,
-      FolderName = nil, -- Create a custom folder for your hub/game
+      FolderName = "Ebola", -- Create a custom folder for your hub/game
       FileName = "Ebola Hub"
    },
    Discord = {
